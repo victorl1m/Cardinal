@@ -24,7 +24,7 @@ module.exports = {
     let nameOfPlayer = interaction.options.getString('name_of_player');
     const tagOfPlayer = interaction.options.getString('tag_of_player');
 
-    nameOfPlayer = nameOfPlayer.replace(/\s/g, '%20');
+    nameOfPlayer = encodeURIComponent(nameOfPlayer);
 
     if (!nameOfPlayer || !tagOfPlayer) {
       // Handle the case where the options are not provided
