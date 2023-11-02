@@ -105,7 +105,7 @@ module.exports = {
           { name: 'Level', value: `${playerData.account_level}`, inline: true },
           { name: 'Rank', value: `${lastMatch.currenttierpatched}`},
           { name: 'Última partida', value: `${lastMmr}`, inline: true},
-          { name: `HS% Total (Ranked)`, value: `${headshotPercentage.toFixed(2)}%`, inline: true}
+          { name: `HS% Total (${matchesData.meta.season.short})`, value: `${headshotPercentage.toFixed(2)}%`, inline: true}
         )
         .setFooter({ text: `Última atualização:  ${playerData.last_update}`, iconURL: 'https://i.imgur.com/c8FulD1.png' })
         .setTimestamp();
