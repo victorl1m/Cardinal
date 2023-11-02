@@ -91,7 +91,7 @@ module.exports = {
       const headshotPercentage = (totalHeadshots / totalShotsFired) * 100;
 
       if (lastMatch.mmr_change_to_last_game.toString().includes('-')) {
-        lastMmr = `**-${lastMatch.mmr_change_to_last_game}** LP`;
+        lastMmr = `**${lastMatch.mmr_change_to_last_game}** LP`;
       } else {
         lastMmr = `**+${lastMatch.mmr_change_to_last_game}** LP`;
       }
